@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -12,7 +11,7 @@ export default function Countdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2027-04-24T20:00:00");
+    const targetDate = new Date("2026-09-04T17:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -46,11 +45,13 @@ export default function Countdown() {
     borderRadius: "20px",
     padding: "25px",
     minWidth: "140px",
-    boxShadow: "1px solid #d4af37",
+    border: "1px solid #d4af37",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
   };
 
   return (
     <section
+      id="contador"
       style={{
         background: "#faf7f2",
         padding: "80px 20px",

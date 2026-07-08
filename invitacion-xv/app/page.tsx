@@ -9,6 +9,7 @@ import DressCode from "../components/DressCode";
 import Gifts from "../components/Gifts";
 import MusicPlayer from "../components/MusicPlayer";
 import Footer from "../components/Footer";
+import Timeline from "../components/Timeline";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Gallery />
       <Ceremony />
       <Reception />
+      <Timeline />
       <DressCode />
       <Gifts />
       <RSVP />

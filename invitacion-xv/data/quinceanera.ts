@@ -20,10 +20,10 @@ export const quinceanera = {
   },
 
   recepcion: {
-    lugar: "Salón Crystal",
-    direccion: "Monterrey, Nuevo León",
-    hora: "8:00 PM",
-    maps: "https://maps.google.com",
+    lugar: "El Milagro Eventos",
+    direccion: "Apodaca, Nuevo León",
+    hora: "7:00 PM",
+    maps: "https://www.google.com/maps?q=Blvrd+Julian+Trevi%C3%B1o+Elizondo+525,+El+Milagro,+66634+Cdad.+Apodaca,+N.L.",
   },
 
   galeria: [
@@ -42,4 +42,28 @@ export const quinceanera = {
     tienda: "Liverpool",
     evento: "12345678",
   },
+
+itinerario: [
+  {
+    hora: "5:00 PM",
+    evento: "Recepción de invitados",
+  },
+  {
+    hora: "6:00 PM",
+    evento: "Ceremonia Religiosa",
+  },
+  {
+    hora: "7:00 PM",
+    evento: "Vals",
+  },
+  {
+    hora: "8:00 PM",
+    evento: "Cena",
+  },
+  {
+    hora: "9:00 PM",
+    evento: "Baile",
+  },
+],
+
 };
