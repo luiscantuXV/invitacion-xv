@@ -12,7 +12,8 @@ export default function Countdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2026-09-04T17:00:00");
+    
+    const targetDate = new Date(quinceanera.fechaEvento);
 
     const interval = setInterval(() => {
       const now = new Date();

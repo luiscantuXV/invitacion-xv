@@ -9,10 +9,13 @@ export default function DressCode() {
     <motion.section
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
       viewport={{ once: true }}
       style={{
-        padding: "100px 20px",
+        padding: "120px 20px",
         backgroundColor: quinceanera.colores.blanco,
       }}
     >
@@ -21,14 +24,15 @@ export default function DressCode() {
           maxWidth: "700px",
           margin: "0 auto",
           background: quinceanera.colores.secundario,
-          borderRadius: "25px",
-          padding: "40px",
+          borderRadius: "30px",
+          border: `1px solid ${quinceanera.colores.primario}20`,
+          padding: "50px",
           textAlign: "center",
           boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
         }}
       >
         <Shirt
-          size={48}
+          size={56}
           color={quinceanera.colores.primario}
           style={{
             marginBottom: "20px",
@@ -38,13 +42,20 @@ export default function DressCode() {
         <h2
           style={{
             color: quinceanera.colores.primario,
-            fontSize: "clamp(2rem, 6vw, 2.5rem)",
+            fontSize: "clamp(2rem, 6vw, 2.8rem)",
+            marginBottom: "20px",
           }}
         >
           Dress Code
         </h2>
 
-        <h3>{quinceanera.DressCode.tipo}</h3>
+        <h3
+          style={{
+            marginBottom: "20px",
+          }}
+        >
+          {quinceanera.DressCode.tipo}
+        </h3>
 
         <p>Evitar colores:</p>
 
@@ -65,8 +76,11 @@ export default function DressCode() {
                   background:
                     quinceanera.colores.primario,
                   color: "white",
-                  padding: "10px 20px",
+                  padding: "12px 22px",
                   borderRadius: "30px",
+                  fontWeight: "bold",
+                  boxShadow:
+                    "0 6px 15px rgba(0,0,0,0.1)",
                 }}
               >
                 ❌ {color}
