@@ -24,7 +24,7 @@ export default function Gallery() {
       <h2
         style={{
           color: "#d4af37",
-          fontSize: "3rem",
+          fontSize: "clamp(2rem, 6vw, 3rem)",
           marginBottom: "40px",
         }}
       >

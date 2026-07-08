@@ -61,9 +61,8 @@ export default function Countdown() {
     >
       <h2
         style={{
-          fontSize: "3rem",
-          color: quinceanera.colores.primario
-          ,
+          fontSize: "clamp(2rem, 6vw, 3rem)",
+          color: quinceanera.colores.primario,
           marginBottom: "40px",
         }}
       >

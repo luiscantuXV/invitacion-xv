@@ -64,7 +64,15 @@ export default function Hero() {
             marginBottom: "30px",
           }}
         >
-          04 de Septiembre de 2026
+          
+           {new Date(
+            quinceanera.fechaEvento
+          ).toLocaleDateString("es-MX", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+       })}
+``
         </p>
 
         <a
