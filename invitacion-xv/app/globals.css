@@ -6,4 +6,13 @@ body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #faf7f2
+  );
+}
+
 }

@@ -55,7 +55,7 @@ export default function Hero() {
 
         <h1
           style={{
-            fontSize: "clamp(3.5rem, 10vw, 7rem)",
+            fontSize: "clamp(4rem, 10vw, 7rem)",
             color: quinceanera.colores.primario,
             margin: "0",
             letterSpacing: "2px",

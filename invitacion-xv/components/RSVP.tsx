@@ -58,7 +58,7 @@ ${mensajePersonal}
           background: quinceanera.colores.blanco,
           padding: "40px",
           borderRadius: "25px",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
           display: "flex",
           flexDirection: "column",
           gap: "15px",

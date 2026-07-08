@@ -1,5 +1,6 @@
 "use client";
 
+import { quinceanera } from "@/data/quinceanera";
 import { useEffect, useRef, useState } from "react";
 
 export default function MusicPlayer() {
@@ -55,26 +56,32 @@ export default function MusicPlayer() {
         <source src="/music/song.mp3" type="audio/mpeg" />
       </audio>
 
+      
       <button
         onClick={toggleMusic}
         style={{
           position: "fixed",
-          bottom: "20px",
-          right: "20px",
+          bottom: "25px",
+          right: "25px",
           zIndex: 1000,
           border: "none",
           borderRadius: "50%",
-          width: "60px",
-          height: "60px",
-          background: "#d4af37",
+          width: "65px",
+          height: "65px",
+          background: quinceanera.colores.primario,
           color: "white",
-          fontSize: "24px",
+          fontSize: "28px",
           cursor: "pointer",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+          boxShadow: "0 8px 20px rgba(0,0,0,0.2)",
+          transform: playing
+            ? "rotate(360deg)"
+            : "rotate(0deg)",
+          transition: "all .5s ease",
         }}
       >
-        {playing ? "⏸️" : "🎵"}
+        {playing ? "🎵" : "▶"}
       </button>
+
     </>
   );
 }

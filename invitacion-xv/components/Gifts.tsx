@@ -9,10 +9,13 @@ export default function Gifts() {
     <motion.section
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeOut",
+      }}
       viewport={{ once: true }}
       style={{
-        padding: "100px 20px",
+        padding: "120px 20px",
         backgroundColor: quinceanera.colores.secundario,
       }}
     >
@@ -21,14 +24,15 @@ export default function Gifts() {
           maxWidth: "700px",
           margin: "0 auto",
           background: quinceanera.colores.blanco,
-          borderRadius: "25px",
-          padding: "40px",
+          borderRadius: "30px",
+          border: `1px solid ${quinceanera.colores.primario}20`,
+          padding: "50px",
           textAlign: "center",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
         }}
       >
         <Gift
-          size={48}
+          size={56}
           color={quinceanera.colores.primario}
           style={{
             marginBottom: "20px",
@@ -38,27 +42,37 @@ export default function Gifts() {
         <h2
           style={{
             color: quinceanera.colores.primario,
-            fontSize: "clamp(2rem, 6vw, 2.5rem)",
+            fontSize: "clamp(2rem, 6vw, 2.8rem)",
+            marginBottom: "20px",
           }}
         >
           Mesa de Regalos
         </h2>
 
-        <p>
+        <p
+          style={{
+            marginBottom: "10px",
+          }}
+        >
           Tu presencia es mi mejor regalo.
         </p>
 
-        <p>
+        <p
+          style={{
+            marginBottom: "30px",
+          }}
+        >
           Si deseas tener un detalle adicional,
           puedes apoyarte en mi mesa de regalos.
         </p>
 
         <div
           style={{
-            marginTop: "30px",
-            padding: "20px",
+            marginTop: "20px",
+            padding: "25px",
             borderRadius: "20px",
             background: quinceanera.colores.secundario,
+            border: `1px solid ${quinceanera.colores.primario}15`,
           }}
         >
           <h3
@@ -74,6 +88,7 @@ export default function Gifts() {
             style={{
               fontSize: "1.3rem",
               fontWeight: "bold",
+              margin: 0,
             }}
           >
             Evento: {quinceanera.mesaRegalos.evento}

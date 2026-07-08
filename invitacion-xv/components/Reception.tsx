@@ -28,7 +28,7 @@ export default function Reception() {
           border: `1px solid ${quinceanera.colores.primario}20`,
           padding: "50px",
           textAlign: "center",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
         }}
       >
         <PartyPopper

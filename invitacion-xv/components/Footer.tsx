@@ -1,19 +1,29 @@
+"use client";
 
+import { motion } from "framer-motion";
 import { quinceanera } from "../data/quinceanera";
 
 export default function Footer() {
   return (
-    <footer
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        duration: 1,
+        ease: "easeOut",
+      }}
+      viewport={{ once: true }}
       style={{
         background: quinceanera.colores.fondoOscuro,
+        color: "white",
         textAlign: "center",
-        padding: "80px 20px",
+        padding: "120px 20px",
       }}
     >
       <h2
         style={{
           color: quinceanera.colores.primario,
-          fontSize: "2.5rem",
+          fontSize: "clamp(2rem, 6vw, 3rem)",
           marginBottom: "20px",
         }}
       >
@@ -22,24 +32,46 @@ export default function Footer() {
 
       <p
         style={{
-          fontSize: "1.2rem",
-          maxWidth: "600px",
+          maxWidth: "700px",
           margin: "0 auto",
+          lineHeight: "1.8",
+          fontSize: "1.1rem",
+        }}
+      >
+        Gracias por acompañarme en este momento tan especial.
+        Tu presencia hará que este día sea aún más inolvidable.
+      </p>
+
+      
+      <div
+        style={{
+          width: "120px",
+          height: "2px",
+          background: quinceanera.colores.primario,
+          margin: "40px auto",
+        }}
+      />
+
+      <p
+        style={{
+          marginTop: "30px",
+          color: "#777",
+          fontSize: "1rem",
           lineHeight: "1.8",
         }}
       >
-        Gracias por acompañarme en este día tan especial.
-        Tu presencia hará de este momento un recuerdo inolvidable.
+        Diseñado con amor para celebrar este día especial
       </p>
 
-      <div
+      <p
         style={{
-          marginTop: "40px",
-          color: "#888",
+          color: "#999",
+          fontSize: "0.9rem",
         }}
       >
-        Mis XV Años © 2026
-      </div>
-    </footer>
+        Mis XV Años © {new Date().getFullYear()}
+      </p>
+
+    </motion.footer>
   );
 }

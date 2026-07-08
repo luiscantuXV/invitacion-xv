@@ -28,7 +28,7 @@ export default function DressCode() {
           border: `1px solid ${quinceanera.colores.primario}20`,
           padding: "50px",
           textAlign: "center",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
         }}
       >
         <Shirt
@@ -79,8 +79,8 @@ export default function DressCode() {
                   padding: "12px 22px",
                   borderRadius: "30px",
                   fontWeight: "bold",
-                  boxShadow:
-                    "0 6px 15px rgba(0,0,0,0.1)",
+                  boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
+                  //boxShadow: "0 6px 15px rgba(0,0,0,0.1)",
                 }}
               >
                 ❌ {color}
