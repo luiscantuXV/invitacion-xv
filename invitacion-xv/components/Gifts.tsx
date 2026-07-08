@@ -1,10 +1,12 @@
+import { quinceanera } from "../data/quinceanera";
+
 export default function Gifts() {
   return (
     <section
       style={{
         padding: "100px 20px",
         textAlign: "center",
-        background: "#faf7f2",
+        backgroundColor: "#faf7f2",
       }}
     >
       <h2
@@ -16,15 +18,11 @@ export default function Gifts() {
         Mesa de Regalos
       </h2>
 
-      <p>
-        Tu presencia es mi mejor regalo.
-      </p>
+      <p>Tu presencia es mi mejor regalo.</p>
 
-      <p>
-        Si deseas obsequiar algo adicional,
-        podrás hacerlo mediante transferencia
-        o mesa de regalos.
-      </p>
+      <p>Liverpool Evento:</p>
+
+      <h3>{quinceanera.mesaRegalos.evento}</h3>
     </section>
   );
 }

@@ -45,8 +45,8 @@ export default function Countdown() {
     backgroundColor: "#ffffff",
     borderRadius: "20px",
     padding: "25px",
-    minWidth: "120px",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.10)",
+    minWidth: "140px",
+    boxShadow: "1px solid #d4af37",
   };
 
   return (

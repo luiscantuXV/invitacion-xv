@@ -1,10 +1,12 @@
+import { quinceanera } from "../data/quinceanera";
+
 export default function DressCode() {
   return (
     <section
       style={{
         padding: "100px 20px",
         textAlign: "center",
-        background: "#ffffff",
+        backgroundColor: "#ffffff",
       }}
     >
       <h2
@@ -16,13 +18,15 @@ export default function DressCode() {
         Dress Code
       </h2>
 
-      <p
-        style={{
-          fontSize: "1.3rem",
-        }}
-      >
-        Formal Elegante
-      </p>
+      <h3>{quinceanera.DressCode.tipo}</h3>
+
+      <p>Evitar colores:</p>
+
+      {quinceanera.DressCode.evitar.map(
+        (color, index) => (
+          <p key={index}>❌ {color}</p>
+        )
+      )}
     </section>
   );
 }

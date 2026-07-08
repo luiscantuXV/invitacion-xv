@@ -8,6 +8,7 @@ import RSVP from "../components/RSVP";
 import DressCode from "../components/DressCode";
 import Gifts from "../components/Gifts";
 import MusicPlayer from "../components/MusicPlayer";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Gifts />
       <RSVP />
       <MusicPlayer />
+      <Footer />
     </main>
   );
 }

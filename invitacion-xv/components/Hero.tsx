@@ -42,7 +42,7 @@ export default function Hero() {
 
         <h1
           style={{
-            fontSize: "5rem",
+            fontSize: "clamp(3rem, 8vw, 6rem)",
             color: "#d4af37",
             margin: "20px 0",
           }}

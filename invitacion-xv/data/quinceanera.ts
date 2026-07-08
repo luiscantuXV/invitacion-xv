@@ -32,4 +32,14 @@ export const quinceanera = {
     "/photos/3.jpg",
     "/photos/4.jpg",
   ],
+
+  DressCode: {
+    tipo: "Formal Elegante",
+    evitar: ["Blanco", "Dorado"],
+  },
+
+  mesaRegalos: {
+    tienda: "Liverpool",
+    evento: "12345678",
+  },
 };
