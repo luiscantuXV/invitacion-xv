@@ -1,5 +1,6 @@
 "use client";
 
+import { quinceanera } from "@/data/quinceanera";
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
@@ -61,7 +62,8 @@ export default function Countdown() {
       <h2
         style={{
           fontSize: "3rem",
-          color: "#d4af37",
+          color: quinceanera.colores.primario
+          ,
           marginBottom: "40px",
         }}
       >

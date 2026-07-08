@@ -8,7 +8,8 @@ export default function Message() {
     <motion.section
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
       style={{
         padding: "100px 20px",
         textAlign: "center",

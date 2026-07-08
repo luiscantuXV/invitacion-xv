@@ -5,15 +5,14 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "#111111",
-        color: "#ffffff",
+        background: quinceanera.colores.fondoOscuro,
         textAlign: "center",
         padding: "80px 20px",
       }}
     >
       <h2
         style={{
-          color: "#d4af37",
+          color: quinceanera.colores.primario,
           fontSize: "2.5rem",
           marginBottom: "20px",
         }}

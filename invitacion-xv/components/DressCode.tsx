@@ -1,14 +1,23 @@
+"use client";
+
 import { quinceanera } from "../data/quinceanera";
+import { motion } from "framer-motion";
+
 
 export default function DressCode() {
   return (
-    <section
-      style={{
-        padding: "100px 20px",
-        textAlign: "center",
-        backgroundColor: "#ffffff",
-      }}
-    >
+    
+<motion.section
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  style={{
+    padding: "100px 20px",
+    textAlign: "center",
+    backgroundColor: "#ffffff",
+  }}
+>
       <h2
         style={{
           color: "#d4af37",
@@ -27,6 +36,6 @@ export default function DressCode() {
           <p key={index}>❌ {color}</p>
         )
       )}
-    </section>
+    </motion.section>
   );
 }

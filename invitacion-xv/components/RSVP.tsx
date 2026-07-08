@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { quinceanera } from "../data/quinceanera";
+import { motion } from "framer-motion";
 
 export default function RSVP() {
   const [nombre, setNombre] = useState("");
@@ -25,7 +26,13 @@ Número de asistentes: ${personas}
   };
 
   return (
-    <section
+    <motion.section
+
+     initial={{ opacity: 0, y: 100 }}
+     whileInView={{ opacity: 1, y: 0 }}
+     transition={{ duration: 0.8 }}
+     viewport={{ once: true }}
+
       style={{
         padding: "100px 20px",
         textAlign: "center",
@@ -88,6 +95,6 @@ Número de asistentes: ${personas}
           Confirmar por WhatsApp
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 }

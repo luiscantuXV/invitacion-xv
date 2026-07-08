@@ -1,19 +1,26 @@
+"use client";
+
 import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 import { quinceanera } from "../data/quinceanera";
 
 export default function Ceremony() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
       style={{
         padding: "100px 20px",
-        backgroundColor: "#faf7f2",
+        backgroundColor: quinceanera.colores.secundario,
       }}
     >
       <div
         style={{
           maxWidth: "700px",
           margin: "0 auto",
-          background: "#ffffff",
+          background: quinceanera.colores.blanco,
           borderRadius: "25px",
           padding: "40px",
           textAlign: "center",
@@ -22,7 +29,7 @@ export default function Ceremony() {
       >
         <MapPin
           size={48}
-          color="#d4af37"
+          color={quinceanera.colores.primario}
           style={{
             marginBottom: "20px",
           }}
@@ -30,8 +37,8 @@ export default function Ceremony() {
 
         <h2
           style={{
-            color: "#d4af37",
-            fontSize: "2.5rem",
+            color: quinceanera.colores.primario,
+            fontSize: "clamp(2rem, 6vw, 2.5rem)",
           }}
         >
           Ceremonia Religiosa
@@ -49,7 +56,7 @@ export default function Ceremony() {
           rel="noopener noreferrer"
           style={{
             display: "inline-block",
-            background: "#d4af37",
+            background: quinceanera.colores.primario,
             color: "white",
             padding: "14px 30px",
             borderRadius: "30px",
@@ -60,6 +67,6 @@ export default function Ceremony() {
           Ver Ubicación
         </a>
       </div>
-    </section>
+    </motion.section> 
   );
 }

@@ -66,4 +66,11 @@ itinerario: [
   },
 ],
 
-};
+colores: {
+  primario: "#d4af37",
+  secundario: "#faf7f2",
+  fondoOscuro: "#111111",
+  blanco: "#ffffff",
+
+}
+}

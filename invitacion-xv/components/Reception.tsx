@@ -1,19 +1,27 @@
+
+"use client";
+
 import { PartyPopper } from "lucide-react";
+import { motion } from "framer-motion";
 import { quinceanera } from "../data/quinceanera";
 
 export default function Reception() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
       style={{
         padding: "100px 20px",
-        backgroundColor: "#ffffff",
+        background: quinceanera.colores.blanco,
       }}
     >
       <div
         style={{
           maxWidth: "700px",
           margin: "0 auto",
-          background: "#faf7f2",
+          background: quinceanera.colores.secundario,
           borderRadius: "25px",
           padding: "40px",
           textAlign: "center",
@@ -22,7 +30,7 @@ export default function Reception() {
       >
         <PartyPopper
           size={48}
-          color="#d4af37"
+          color={quinceanera.colores.primario}
           style={{
             marginBottom: "20px",
           }}
@@ -30,8 +38,8 @@ export default function Reception() {
 
         <h2
           style={{
-            color: "#d4af37",
-            fontSize: "2.5rem",
+            color: quinceanera.colores.primario,
+            fontSize: "clamp(2rem, 6vw, 2.5rem)",
           }}
         >
           Recepción
@@ -60,6 +68,6 @@ export default function Reception() {
           Ver Mapa
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 }
